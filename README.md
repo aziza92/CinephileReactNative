@@ -30,7 +30,7 @@ This repository contains my first big project with React Native named « Cinephi
 -  Responsive Design: Enjoy a seamless experience on both iOS and Android devices.
 
   #
-  ![](https://github.com/aziza92/Cinephile-original/assets/64699474/261c6e63-31ad-421d-889b-1922600e25d4.gif)&nbsp;![](https://github.com/aziza92/Cinephile-original/assets/64699474/942aec9f-ce4d-4b7e-abfc-e06935a7243e.jpg) 
+  ![](https://github.com/aziza92/Cinephile-original/assets/64699474/261c6e63-31ad-421d-889b-1922600e25d4.gif)&nbsp;![](https://github.com/aziza92/Cinephile-original/assets/64699474/942aec9f-ce4d-4b7e-abfc-e06935a7243e.gif) 
 ![](https://github.com/aziza92/Cinephile-original/assets/64699474/3601de2e-f653-46de-b498-4f9a4a1fd8bc.gif)
 
 
