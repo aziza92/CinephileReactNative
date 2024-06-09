@@ -34,7 +34,7 @@ This repository contains my first big project with React Native named « Cinephi
 <img src="https://github.com/aziza92/Cinephile/assets/64699474/81bf9acc-b2a3-4789-a2aa-ce353842acc0.jpg" width="300" height="600"> <br>
 
 <img src="https://github.com/aziza92/Cinephile/assets/64699474/9b0ddde2-d2a2-44bd-bb32-4afcbc6d3883.gif" width="300" height="600">&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://github.com/aziza92/Cinephile/assets/64699474/96ef5603-9949-4957-9313-a343870bb10e.gif" width="300" height="600">
+<img src="https://github.com/aziza92/Cinephile/assets/64699474/0dc440a8-9812-4ddf-8d1e-ab922a8e1b7e.gif" width="300" height="600">
 
 <br>
 
