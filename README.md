@@ -47,6 +47,7 @@ This repository contains my first big project with React Native named « Cinephi
 - React Native CLI
 - iOS Simulator or Android Emulator
 - VsCode
+- Android Studio
 
 # Getting Started:
 1. Clone the repository:
