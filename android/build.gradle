@@ -1,0 +1,77 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+        buildscript {
+            ext {
+                buildToolsVersion = "33.0.1"
+                minSdkVersion = 21
+                compileSdkVersion = 33
+                targetSdkVersion = 33
+            }
+            repositories {
+                google()
+                mavenCentral()
+
+            }
+            dependencies {
+                classpath('com.android.tools.build:gradle:7.4.2')
+                classpath 'com.google.gms:google-services:4.3.15'
+                classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10"
+                classpath 'org.codehaus.groovy:groovy-json:3.0.9'
+
+                // NOTE: Do not place your application dependencies here; they belong
+                // in the individual module build.gradle files
+            }
+        }
+
+subprojects { subproject ->
+    if(project['name'] == 'react-native-reanimated'){
+        project.configurations { compile { } }
+    }
+}
+
+def REACT_NATIVE_VERSION = new File(['node', '--print',"JSON.parse(require('fs').readFileSync(require.resolve('react-native/package.json'), 'utf-8')).version"].execute(null, rootDir).text.trim())
+
+allprojects {
+    configurations.all {
+        resolutionStrategy {
+            // Remove this override in 0.66, as a proper fix is included in react-native itself.
+            force "com.facebook.react:react-native:" + REACT_NATIVE_VERSION
+        }
+    }
+    repositories {
+
+        google()
+        mavenCentral()
+
+        exclusiveContent {
+
+            filter {
+                includeGroup "com.facebook.react"
+            }
+
+            forRepository {
+
+                maven {
+                    url "$rootDir/../node_modules/react-native/android"
+                }
+
+            }
+
+        }
+
+
+        mavenLocal()
+        // maven {
+        //     // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+        //     url("$rootDir/../node_modules/react-native/android")
+        // }
+        maven {
+            // Android JSC is installed from npm
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
+
+
+
+        maven { url 'https://jitpack.io' }
+    }
+}
